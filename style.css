@@ -1,0 +1,254 @@
+.root {
+    --main-color:rgb(105, 170, 220);
+   
+    
+}
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+/*! temel html kodları */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color:rgb(105, 170, 220);
+}
+.logo img {
+    height: 7rem;
+}
+body {
+    background-color: var(--main-color);
+
+
+}
+section{
+    padding: 3.5rem 7%;
+}
+a{
+    color: black;
+    text-decoration: none;
+    
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #0d0d0d;
+    background-color: black;
+    color: aliceblue;
+    
+   
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+.heading span{
+  text-transform: uppercase;
+}
+.btn a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+    margin: top -2rem;;
+
+}
+/* header start  */
+.header .logo img {
+
+    height: 10rem;
+}
+.header {
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000
+
+}   
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: (var(--black-color));
+    border-bottom: 0.1rem solid transparent;
+    padding-bottom:0;
+    text-decoration: none;
+   
+
+}
+.header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+/* header end  */
+/* anasayfa start */
+ .anasayfa { 
+    min-height: 100vh;
+    background: url(./images/başlık.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+    
+}
+.anasayfa .content{
+    max-width: 60rem;
+} 
+ .anasayfa .content h3{
+    font-size: 8rem;
+    text-transform: capitalize;
+    color:#fff
+    margin-top: 20rem;
+}
+.anasayfa .content h4{
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:#fff
+    margin-top: -8rem;
+} 
+/* anasayfa end */
+/* hizmetlerimiz start */
+.hizmet .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    gap: 1.5rem;
+  }
+  .hizmet .box-container .box{
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    background-color:white;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .hizmet .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    
+  }
+  .hizmet .box-container .box:hover img{
+    transform: scale(1.1);
+    }
+    
+  .hizmet .box-container .box .hizmet-category{
+    font-size: 1.4rem;
+  }
+  .hizmet .box-container .box h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+
+/* hizmetlerimiz end */
+
+/* about start */
+}
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+.about .row .image {
+    flex: 1 1 45rem;   
+}
+.about .row img {
+    width: 100%;
+}
+.about .row .content {
+    flex: 1 1 45rem; 
+ }
+.about .row .content h3{
+        
+        font-size: 3rem;
+        color: #fff; 
+}
+.about .row .content p{
+font-size: 1.6rem;
+color: #ccc;
+padding: 1rem 0;
+line-height: 1.8;
+}
+/* about end*/
+
+
+/* iletişim start  */
+.iletisim .row{
+    display: flex;
+    background-color:black;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.iletisim .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit:cover;
+
+}
+.iletisim .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+    
+}
+.iletisim .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+    
+}
+.iletisim .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+}
+.iletisim .row form .inputBox i{
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+
+}
+.iletisim .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background:transparent;
+}
+.iletisim .row form .btn {
+    color:var(--main-color);
+    background-color: #fff;
+    font-weight: bold;
+}
+/* iletişim end  */
+
+
+
+
+ 
